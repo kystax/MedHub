@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+        <link rel="stylesheet" href="home.css"/>
+        <title>MedHub </title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="navheader">
+                    <div class="navlogo">
+                        <a href="#" class="logo">
+                            <img src="assets/logo.png" alt="logo"/>
+                            <span>MedHub</span>
+                        </a>
+                    </div>
+                    <div class="navmenu" id="menu-btn">
+                        <i class="ri-menu-line"></i>
+                    </div>
+                </div>
+                <ul class="navlinks" id="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li>
+                        <a href="login.html" class="btn">
+                            <span><i class="ri-login-box-line"></i></span>
+                            Login
+                          </a>
+                        </li>
+                      </ul>
+                      <div class="nav-btns">
+                        <a href="login.html" class="btn">
+                          <span><i class="ri-login-box-line"></i></span>
+                          Login
+                        </a>
+                      </div>
+                    </nav>
+
+                    <div class="section-container header-container" id="home">
+                    <div class="header-image">
+                        <img src="assets/ser.png" alt="header" />
+                    </div>
+                    <div class="header-content">
+                        <div class="header-tag">
+                            Stay Healthy
+                            <img src="assets/dt1.png" alt="header tag" />
+                        </div>
+                        <h1>Our <span>Services</span></h1>
+                        <p class="section-description">
+                            At MedHub, we offer a comprehensive suite of services tailored to meet the needs of 
+                            healthcare providers and patients. Our innovative solutions ensure efficient, secure, 
+                            and accessible healthcare experiences.
+                        </p>
+                    </div>
+                </header>
+
+                <section class="section-container service-container" id="services">
+                    <p class="section-subheader">OUR SERVICES</p>
+                    <h2 class="section-header">We Provide Excellent Medical Services For You</h2>
+                    <div class="service-grid">
+                      <div class="service-card">
+                        <img src="assets/emg.jpg" alt="service" />
+                        <h4>Emergency Care</h4>
+                        <p>Immediate and efficient care for urgent medical situations.</p>
+                      </div>
+                      <div class="service-card">
+                        <img src="assets/surgery.jpg" alt="service" />
+                        <h4>Operation & Surgery</h4>
+                        <p>Advanced surgical procedures performed by experienced surgeons.</p>
+                      </div>
+                      <div class="service-card">
+                        <img src="assets/outdoor.jpg" alt="service" />
+                        <h4>Outdoor Checkup</h4>
+                        <p>Comprehensive health checkups in a convenient outdoor setting.</p>
+                      </div>
+                      <div class="service-card">
+                        <img src="assets/ambulance.png" alt="service" />
+                        <h4>Ambulance Service</h4>
+                        <p>Fast and reliable ambulance services for emergencies.</p>
+                      </div>
+                      <div class="service-card">
+                        <img src="assets/pharmacy.png" alt="service" />
+                        <h4>Medicine & Pharmacy</h4>
+                        <p>Wide range of medications and pharmacy services available.</p>
+                      </div>
+                      <div class="service-card">
+                        <img src="assets/reports.jpg" alt="service" />
+                        <h4>Medical Reports</h4>
+                        <p>Access and manage your detailed medical reports with ease.</p>
+                      </div>
+                    </div>
+                  </section>
+            <section class="download-section" id="contact">
+            <div class="content-wrapper">
+              <p class="section-subheader">APPOINTMENT</p>
+              <h2 class="content-header">Make An Appointment For Your Family!</h2>
+              <p class="content-description">
+                Schedule appointments effortlessly to ensure your family's 
+                healthcare needs are always met.
+              </p>
+              <div class="content-btn">
+                <button class="btn">Get The App</button>
+              </div>
+            </div>
+            
+            <div class="form-wrapper">
+              <form action="appointment-form.php" method="post">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="department">Department</label>
+                    <select id="department" name="department" required>
+                      <option value="">Select Department</option>
+                      <option value="cardiology">Cardiology</option>
+                      <option value="neurology">Neurology</option>
+                      <option value="orthopedics">Orthopedics</option>
+                      <option value="pediatrics">Pediatrics</option>
+                      
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="doctor">Doctor</label>
+                    <select id="doctor" name="doctor" required>
+                      <option value="">Select Doctor</option>
+                      <option value="dr-smith">Dr. Smith</option>
+                      <option value="dr-jones">Dr. Jones</option>
+                      <option value="dr-brown">Dr. Brown</option>
+                      
+                    </select>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="date">Date</label>
+                    <input type="date" id="appointment_date" name="appointment_date" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="appointment_time">Time</label>
+                    <input type="time" id="appointment_time" name="appointment_time" required>
+                  </div>
+                </div>
+                <button type="submit" class="btn">Make An Appointment</button>
+              </form>
+            </div>
+          </section>
+        
+          <section class="testimonials">
+            <p class="section-subheader">TESTIMONIALS</p>
+              <h2 class="content-header">What Our Customers Say About Us</h2>
+              <div class="testimonial-container">
+                <div class="testimonial">
+                  <p>"MedHub has transformed the way we manage patient records. It's seamless and efficient!"</p>
+                  <h4>- Dr. John Smith</h4>
+                </div>
+                <div class="testimonial">
+                  <p>"Thanks to MedHub, I can access my medical reports anytime, anywhere. Highly recommend!"</p>
+                  <h4>- Jane Doe</h4>
+                </div>
+                <div class="testimonial">
+                  <p>"The best part of MedHub is how easy it makes updating and accessing patient records."</p>
+                  <h4>- Dr. Emily White</h4>
+                </div>
+              </div>
+          </section>
+
+            <footer>
+                    <div class="section-container footer-container">
+                      <div class="footer-col">
+                        <div class="footer-logo">
+                          <a href="#" class="logo">
+                            <img src="assets/logo.png" alt="logo" />
+                            <span>MedHub</span>
+                          </a>
+                        </div>
+                        <p class="section-description">
+                          Best healthcare solution in 
+                          your city.
+                        </p>
+                        <ul class="footer-socials">
+                          <li>
+                            <a href="#"><i class="ri-instagram-fill"></i></a>
+                          </li>
+                          <li>
+                            <a href="#"><i class="ri-facebook-fill"></i></a>
+                          </li>
+                          <li>
+                            <a href="#"><i class="ri-twitter-fill"></i></a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="footer-col">
+                        <h4>About</h4>
+                        <ul class="footer-links">
+                          <li><a href="#">About Us</a></li>
+                          <li><a href="#">Features</a></li>
+                          <li><a href="#">News</a></li>
+                          <li><a href="#">Services</a></li>
+                        </ul>
+                      </div>
+                      <div class="footer-col">
+                        <h4>Company</h4>
+                        <ul class="footer-links">
+                          <li><a href="#">Why MedHub?</a></li>
+                          <li><a href="#">Partner With Us</a></li>
+                          <li><a href="#">FAQ</a></li>
+                          <li><a href="#">Blog</a></li>
+                        </ul>
+                      </div>
+                      <div class="footer-col">
+                        <h4>Support</h4>
+                        <ul class="footer-links">
+                          <li><a href="#">Account</a></li>
+                          <li><a href="#">Support Center</a></li>
+                          <li><a href="#">Feedback</a></li>
+                          <li><a href="#">Contact Us</a></li>
+                          <li><a href="#">Accessibility</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="footer-bar">
+                      Copyright © 2024 MedHub. All rights reserved.
+                    </div>
+                  </footer>        
+              
+                <script src="https://unpkg.com/scrollreveal"></script>
+                <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+                <script src="main.js"></script>
+</body>
+        
+</html>

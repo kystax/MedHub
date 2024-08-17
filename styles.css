@@ -1,0 +1,358 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('img/Desktop\ 1.png')no-repeat center center/cover;
+    z-index: -1;  
+}
+.container {
+    display: flex;
+    margin-left: 200px;  
+    flex: 1;
+    flex-direction: column;
+}
+
+.sidebar {
+    width: 200px;
+    height: 100vh; 
+    background-color: #0077B6;
+    padding: 50px 5px;
+    box-sizing: border-box;
+    transition: width 0.3s;
+    position: fixed;  
+    top: 0;
+    left: 0;
+}
+
+.logo img {
+    width: 80%;  
+    max-width: 150px;  
+    margin-bottom: 20px; 
+    height: auto;
+   
+}
+.sidebar button {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color:#0077B6; 
+    color: white; 
+    border: none;
+    border-radius: 10px;
+}
+
+.sidebar button i{
+    margin-right: 12px;
+    font-size: 30px;
+}
+
+.sidebar .button-text{
+    font-size: 18px;
+}
+
+.sidebar button:hover i,
+.sidebar button:hover .button-text {
+    color: #081521;  
+}
+
+.main-content {
+    flex: 1;
+    padding: 60px;
+    padding-left: 100px;
+    padding-right: 300px;
+    box-sizing: border-box;
+}
+
+.middle {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: flex-start;
+}
+
+.patient-info .box{
+    height: 20px;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+.patient-info .button{
+    margin-left: 10px;
+    height: 30px;
+    background-color: #03045E;  
+    color: white;  
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.patient-info .button:hover {
+    background-color: #00B4D8; 
+}
+
+.patient-details {
+    margin-top: 10px;
+}
+
+.patient-photo {
+    flex-shrink: 0; 
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.patient-photo img {
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.patient-details p strong {
+    font-weight: bold;
+}
+.patient-details, .patient-notes {
+    margin-bottom: 20px;
+}
+
+.patient-notes {
+    margin-top: 50px;
+}
+
+.patient-notes table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.patient-notes th, .patient-notes td {
+    border: 1px solid #5CC6FF;
+    padding: 8px;
+}
+
+.patient-notes th {
+    background-color: #C2EAFF;
+    text-align: left;
+    width: 30%;
+}
+
+.patient-notes td {
+    text-align: left;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container{
+        display: flex;
+        margin-left: 100px; 
+        flex: 1;
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 60px;
+        padding: 10px;
+    }
+
+    .logo img{
+        margin-top: 20px;
+        width: 50px;
+        
+    }
+    .sidebar button .button-text {
+        display: none;  
+    }
+
+    .sidebar button {
+        justify-content: center;
+    }
+
+    .main-content {
+        padding: 60px;
+        padding-left: 10px;
+        padding-right: 100px;
+    }
+
+    .patient-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .patient-photo img {
+        margin-top: 10px;
+    }
+
+    .patient-notes th, .patient-notes td {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar {
+        padding: 5px;
+    }
+
+    .logo img{
+        margin-top: 20px;
+        width: 50px;
+        
+    }
+    
+    .main-content {
+        padding: 60px;
+        padding-left: 10px;
+        padding-right: 100px;
+    }
+
+    .patient-photo img {
+        width: 100px;
+        height: 133px;
+    }
+
+    .patient-notes th, .patient-notes td {
+        padding: 5px;
+    }
+}
+
+/*add patient*/
+.form-container {
+    padding: 20px;
+    box-sizing: border-box;
+    max-width: 800px;
+    width: 100%;
+    margin-left: 250px;
+    margin-top: 20px;
+    
+}
+
+.form-container h2 {
+    margin-bottom: 50px;
+    color: #48CAE4;
+    font-size: 40px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="date"],
+form select,
+form textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 3px solid #535A8D;
+    border-radius: 10px;
+}
+
+form textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 60px;
+        padding: 10px;
+    }
+
+    .sidebar button .button-text {
+        display: none;  
+    }
+
+    .sidebar button {
+        justify-content: center;
+    }
+
+    .form-container { 
+        margin-left: 80px;
+        padding-right: 100px;
+    }
+}
+@media (max-width: 480px) {
+    .form-container {
+        margin-left: 80px;
+        padding-right: 100px;
+    }
+
+    .form-container h2 {
+        font-size: 20px;
+    }
+
+    form input[type="text"],
+    form input[type="date"],
+    form select,
+    form textarea {
+        font-size: 14px;
+    }
+
+    form input[type="submit"] {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+/* edit patient*/
+.edit-info{
+    margin-bottom: 50px;
+}
+
+.edit-info .box{
+    height: 20px;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+.edit-info .button{
+    margin-left: 10px;
+    height: 30px;
+    background-color: #03045E;  
+    color: white;  
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.edit-info .button:hover {
+    background-color: #00B4D8; 
+}

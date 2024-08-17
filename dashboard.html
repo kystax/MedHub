@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css?v=1.2">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <main>
+        <div class="sidebar">
+            <div class="logo">
+                <button onclick="window.location.href='index.html'">
+                    <img src="img/logo.png" alt="Logo">
+                </button>            
+            </div>
+            <button onclick="window.location.href='dashboard.html'">
+                <i class="fa-solid fa-house"></i>
+                <span class="button-text">Home</span>
+            </button>
+            <button onclick="window.location.href='recode.html'">
+                <i class="fa-solid fa-file"></i>
+                <span class="button-text">My Records</span>
+            </button>
+            <button onclick="window.location.href='add_patient.html'">
+                <i class="fas fa-user-plus"></i>
+                <span class="button-text">Add Patient</span>
+            </button>
+            <button onclick="window.location.href='edit_patient.html'">
+                <i class="fas fa-pen-to-square"></i>
+                <span class="button-text">Edit Profile</span>
+            </button>
+            <button onclick="window.location.href='login.html'">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <span class="button-text">Logout</span>
+            </button>
+        </div>
+        <div class="container">
+            <div class="welcome">
+                <h2>Welcome to the Dashboard</h2>
+            </div>
+            <section class="cards">
+                <div class="card">
+                    <img src="img/pathology icon.png" alt="Pathology Testing">
+                    <h3>Pathology Testing</h3>
+                    <p>"Pathology testing provides detailed insights into disease mechanisms and cellular abnormalities"</p>
+                    <button a href="#">Read More</button>
+                </div>
+                <div class="card">
+                    <img src="img/microbio icon.png" alt="Microbiology Tests">
+                    <h3>Microbiology Tests</h3>
+                    <p>"Microbiology tests help identify microorganisms and infections, guiding effective treatment plans"</p>
+                    <button a href="#">Read More</button>
+                </div>
+                <div class="card">
+                    <img src="img/biochemistry icon.png" alt="Biochemistry Tests">
+                    <h3>Biochemistry Tests</h3>
+                    <p>"Biochemistry tests are essential for analyzing metabolic processes and diagnosing various conditions"</p>
+                    <button a href="#">Read More</button>
+                </div>
+                <div class="card">
+                    <img src="img/urine test icon.png" alt="Urine Tests">
+                    <h3>Urine Tests</h3>
+                    <p>"Urine tests are used to detect metabolic and kidney disorders, ensuring early intervention"</p>
+                    <button a href="#">Read More</button>
+                </div>
+                <div class="card">
+                    <img src="img/blood test icon.png" alt="Blood Tests">
+                    <h3>Blood Tests</h3>
+                    <p>"Blood tests are crucial for evaluating overall health and detecting a wide range of diseases"</p>
+                    <button a href="#">Read More</button>
+                </div>
+                <div class="card">
+                    <img src="img/fever test icon.png" alt="Fever Tests">
+                    <h3>Fever Tests</h3>
+                    <p>"Fever tests help determine the underlying causes of fever, ensuring accurate diagnosis and treatment"</p>
+                    <button a href="#">Read More</button>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
